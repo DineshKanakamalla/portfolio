@@ -1261,6 +1261,26 @@
   color: rgb(var(--accent));
 }
 
+/* On narrow phones the key column squeezes the value until the email address
+   and GitHub URL break mid-word, so stack them instead of forcing a row. */
+@media (max-width: 479px) {
+  /* Trim the panel padding too, so the value column is wide enough to hold
+     github.com/DineshKanakamalla on a single line. */
+  .contact-panel {
+    padding: 1.5rem;
+  }
+
+  .contact-list {
+    padding: 1rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}
+
 .site-footer {
   border-top: 1px solid rgb(var(--line));
 }
@@ -1281,6 +1301,14 @@
 @media (min-width: 640px) {
   .footer-inner {
     padding: 1.8rem 2.5rem;
+  }
+}
+
+/* Below the desktop nav breakpoint the footer stack sits low enough that the
+   fixed .to-top button lands on top of the last link, so reserve room for it. */
+@media (max-width: 899px) {
+  .footer-inner {
+    padding-bottom: 4.5rem;
   }
 }
 
