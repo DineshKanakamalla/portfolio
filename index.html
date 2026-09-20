@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siva Dinesh Kanakamalla — Embedded Software Engineer | Linux &amp; Networking</title>
+  <meta
+    name="description"
+    content="Portfolio of Kanakamalla Siva Dinesh, an embedded software engineer in Bangalore working in Embedded C and Linux on network devices: Wi-Fi access point firmware with CAPWAP, 802.11k/v roaming and band steering, xPON ONU firmware, Ethernet switch management and ITSAR security compliance."
+  />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Siva Dinesh Kanakamalla — Embedded Software Engineer" />
+  <meta
+    property="og:description"
+    content="Embedded C and Linux networking: Wi-Fi AP firmware with CAPWAP, roaming and band steering, xPON ONU hardening, Ethernet switch management and ITSAR security compliance."
+  />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230d746a'/><text x='32' y='44' font-family='system-ui,-apple-system,sans-serif' font-size='31' font-weight='600' fill='%23ffffff' text-anchor='middle'>SD</text></svg>"
+  />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8f9f8" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0f12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    // Resolve the theme before first paint to avoid a flash of the wrong palette.
+    (function () {
+      try {
+        var stored = window.localStorage.getItem('theme')
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        var useDark = stored ? stored === 'dark' : prefersDark
+        document.documentElement.classList.toggle('dark', useDark)
+      } catch (error) {
+        /* localStorage unavailable — fall back to the light palette */
+      }
+    })()
+  </script>
+</head>
+<body class="bg-canvas text-ink font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "siva-dinesh-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Portfolio of Kanakamalla Siva Dinesh — embedded software, embedded Linux and networking.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "vite": "^6.4.1"
+  }
+}
